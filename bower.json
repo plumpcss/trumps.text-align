@@ -1,0 +1,17 @@
+{
+  "name": "plumpcss-text-align",
+  "version": "0.1.0",
+  "authors": [
+    "Jon Hurrell <jon@plumpdigital.co.uk>"
+  ],
+  "description": "Text align helper classes",
+  "main": "_trumps.text-align.scss",
+  "keywords": [
+    "plumpcss",
+    "oocss",
+    "css",
+    "helper"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.plumpdigital.co.uk/"
+}

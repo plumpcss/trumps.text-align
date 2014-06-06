@@ -1,0 +1,51 @@
+/*------------------------------------*\
+    #TEXT ALIGNMENT
+\*------------------------------------*/
+
+/**
+ *    Text align helper classes. Use these to align text on a micro level.
+ *    Classes can take a symbol format (e.g. `.ta>) or an abbreviated
+ *    format (e.g. `.tal`). Toggle formats by overriding the
+ *    `$plump-enable-text-align--symbol` variable defined below, in the
+ *    project's `style.scss`.
+ */
+
+$plump-enable-text-align--symbol: 	false !default;
+
+@if ($plump-enable-text-align--symbol == true) {
+
+	.#{$plump-namespace}ta\<,
+	%#{$plump-namespace}ta\< {
+		text-align: left !important;
+	}
+
+	.#{$plump-namespace}ta\>,
+	%#{$plump-namespace}ta\> {
+		text-align: right !important;
+	}
+
+	.#{$plump-namespace}ta\<\>,
+	%#{$plump-namespace}ta\<\> {
+		text-align: center !important;
+	}
+
+}
+
+@else {
+
+	.#{$plump-namespace}tal,
+	%#{$plump-namespace}tal {
+		text-align: left !important;
+	}
+
+	.#{$plump-namespace}tar,
+	%#{$plump-namespace}tar {
+		text-align: right !important;
+	}
+
+	.#{$plump-namespace}tac,
+	%#{$plump-namespace}tac {
+		text-align: center !important;
+	}
+
+}
