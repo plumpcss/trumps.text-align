@@ -13,5 +13,8 @@
     "helper"
   ],
   "license": "MIT",
+  "dependencies" : {
+    "plumpcss-defaults": "latest"
+  },
   "homepage": "http://www.plumpdigital.co.uk/"
 }
