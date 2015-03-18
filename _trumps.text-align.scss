@@ -1,31 +1,36 @@
-/*------------------------------------*\
-    #TEXT ALIGNMENT
-\*------------------------------------*/
+///*------------------------------------*\
+//   #TEXT ALIGN
+//\*------------------------------------*/
 
-/**
- *    Text align helper classes. Use these to align text on a micro level.
- *    Classes can take a symbol format (e.g. `.ta>) or an abbreviated
- *    format (e.g. `.tal`). Toggle formats by overriding the
- *    `$plump-enable-text-align--symbol` variable defined below, in the
- *    project's `style.scss`.
- */
+//    Text align helper classes. Use these to align text on a micro level.
+//    Classes can take a symbol format (e.g. `.ta>) or an abbreviated
+//    format (e.g. `.tal`). Toggle formats by overriding the
+//    `$plump-enable-text-align--symbol` variable defined below, in the
+//    project's `style.scss`.
+
+//    Predefine the variables below in order to alter and enable specific features.
+$plump-text-align-namespace:        $plump-namespace !default;
 
 $plump-enable-text-align--symbol: 	false !default;
 
+
+
+
+
 @if ($plump-enable-text-align--symbol == true) {
 
-	.#{$plump-namespace}ta\<,
-	%#{$plump-namespace}ta\< {
+	.#{$plump-text-align-namespace}u-ta\<,
+	%#{$plump-text-align-namespace}u-ta\< {
 		text-align: left !important;
 	}
 
-	.#{$plump-namespace}ta\>,
-	%#{$plump-namespace}ta\> {
+	.#{$plump-text-align-namespace}u-ta\>,
+	%#{$plump-text-align-namespace}u-ta\> {
 		text-align: right !important;
 	}
 
-	.#{$plump-namespace}ta\<\>,
-	%#{$plump-namespace}ta\<\> {
+	.#{$plump-text-align-namespace}u-ta\<\>,
+	%#{$plump-text-align-namespace}u-ta\<\> {
 		text-align: center !important;
 	}
 
@@ -33,18 +38,18 @@ $plump-enable-text-align--symbol: 	false !default;
 
 @else {
 
-	.#{$plump-namespace}tal,
-	%#{$plump-namespace}tal {
+	.#{$plump-text-align-namespace}u-tal,
+	%#{$plump-text-align-namespace}u-tal {
 		text-align: left !important;
 	}
 
-	.#{$plump-namespace}tar,
-	%#{$plump-namespace}tar {
+	.#{$plump-text-align-namespace}u-tar,
+	%#{$plump-text-align-namespace}u-tar {
 		text-align: right !important;
 	}
 
-	.#{$plump-namespace}tac,
-	%#{$plump-namespace}tac {
+	.#{$plump-text-align-namespace}u-tac,
+	%#{$plump-text-align-namespace}u-tac {
 		text-align: center !important;
 	}
 
